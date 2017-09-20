@@ -14,10 +14,10 @@
 		88CE82E41F72DE25002EF222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CE82E31F72DE25002EF222 /* Assets.xcassets */; };
 		88CE82E71F72DE25002EF222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE82E51F72DE25002EF222 /* LaunchScreen.storyboard */; };
 		88CE82F01F72E644002EF222 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE82EF1F72E644002EF222 /* PhotoCollectionViewCell.m */; };
-		88CE82F31F72E712002EF222 /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE82F21F72E712002EF222 /* PhotoCollectionViewController.m */; };
 		88CE82F61F72E984002EF222 /* PhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE82F51F72E984002EF222 /* PhotoManager.m */; };
 		88CE82F91F72EAD1002EF222 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE82F81F72EAD1002EF222 /* Photo.m */; };
 		88CE82FC1F72EADE002EF222 /* PhotoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE82FB1F72EADE002EF222 /* PhotoObject.m */; };
+		88CE834B1F732D5C002EF222 /* PhotoCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE834A1F732D5C002EF222 /* PhotoCollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +33,14 @@
 		88CE82E81F72DE25002EF222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88CE82EE1F72E644002EF222 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		88CE82EF1F72E644002EF222 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
-		88CE82F11F72E712002EF222 /* PhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewController.h; sourceTree = "<group>"; };
-		88CE82F21F72E712002EF222 /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
 		88CE82F41F72E984002EF222 /* PhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoManager.h; sourceTree = "<group>"; };
 		88CE82F51F72E984002EF222 /* PhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoManager.m; sourceTree = "<group>"; };
 		88CE82F71F72EAD1002EF222 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		88CE82F81F72EAD1002EF222 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		88CE82FA1F72EADE002EF222 /* PhotoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoObject.h; sourceTree = "<group>"; };
 		88CE82FB1F72EADE002EF222 /* PhotoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoObject.m; sourceTree = "<group>"; };
+		88CE83491F732D5C002EF222 /* PhotoCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionReusableView.h; sourceTree = "<group>"; };
+		88CE834A1F732D5C002EF222 /* PhotoCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,6 @@
 				88CE82E01F72DE25002EF222 /* Main.storyboard */,
 				88CE82EE1F72E644002EF222 /* PhotoCollectionViewCell.h */,
 				88CE82EF1F72E644002EF222 /* PhotoCollectionViewCell.m */,
-				88CE82F11F72E712002EF222 /* PhotoCollectionViewController.h */,
-				88CE82F21F72E712002EF222 /* PhotoCollectionViewController.m */,
 				88CE82E31F72DE25002EF222 /* Assets.xcassets */,
 				88CE82E51F72DE25002EF222 /* LaunchScreen.storyboard */,
 				88CE82E81F72DE25002EF222 /* Info.plist */,
@@ -92,6 +90,8 @@
 				88CE82F81F72EAD1002EF222 /* Photo.m */,
 				88CE82FA1F72EADE002EF222 /* PhotoObject.h */,
 				88CE82FB1F72EADE002EF222 /* PhotoObject.m */,
+				88CE83491F732D5C002EF222 /* PhotoCollectionReusableView.h */,
+				88CE834A1F732D5C002EF222 /* PhotoCollectionReusableView.m */,
 			);
 			path = InstaKilo;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 				88CE82FC1F72EADE002EF222 /* PhotoObject.m in Sources */,
 				88CE82DF1F72DE25002EF222 /* ViewController.m in Sources */,
 				88CE82F01F72E644002EF222 /* PhotoCollectionViewCell.m in Sources */,
-				88CE82F31F72E712002EF222 /* PhotoCollectionViewController.m in Sources */,
+				88CE834B1F732D5C002EF222 /* PhotoCollectionReusableView.m in Sources */,
 				88CE82DC1F72DE25002EF222 /* AppDelegate.m in Sources */,
 				88CE82F61F72E984002EF222 /* PhotoManager.m in Sources */,
 				88CE82D91F72DE25002EF222 /* main.m in Sources */,
