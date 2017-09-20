@@ -7,12 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "PhotoCollectionViewCell.h"
-#import "PhotoManager.h"
 
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (nonatomic) PhotoManager *manager;
+@interface ViewController ()
 
 @end
 
@@ -21,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.manager = [PhotoManager new];
 }
 
 
@@ -29,25 +24,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    
-}
-
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.manager numberOfItemsInSection:section];
-}
-
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
-
-
-
-
-
 
 
 @end

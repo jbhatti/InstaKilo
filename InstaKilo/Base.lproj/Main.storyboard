@@ -20,48 +20,11 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7td-4u-41j" customClass="I">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ua8-2f-iGj">
-                                    <size key="itemSize" width="178" height="186"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="5vD-TQ-NKq" customClass="PhotoCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="178" height="186"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="178" height="186"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="HNN-c5-6WO"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vPo-nC-TuU"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="7td-4u-41j" secondAttribute="trailing" id="ECC-Ay-dgv"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7td-4u-41j" secondAttribute="bottom" id="NZm-0i-kvb"/>
-                            <constraint firstItem="7td-4u-41j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VwU-qH-niz"/>
-                            <constraint firstItem="7td-4u-41j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qJw-hl-iEB"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="collectionView" destination="7td-4u-41j" id="dGB-kB-pT8"/>
-                        <outlet property="view" destination="7td-4u-41j" id="q1K-BC-QVF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>

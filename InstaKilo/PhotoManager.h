@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Photo;
 
 @interface PhotoManager : NSObject
 
-
+@property (nonatomic, readonly) NSArray <Photo *>* photos;
 
 
 @end

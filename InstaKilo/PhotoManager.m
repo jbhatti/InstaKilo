@@ -8,16 +8,6 @@
 
 #import "PhotoManager.h"
 
-@interface PhotoManager()
-
-@property (nonatomic) NSArray* photoArray;
-
-@end
-
 @implementation PhotoManager
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return self.photoArray.count;
-}
 
 @end
