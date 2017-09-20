@@ -6,8 +6,11 @@
 //  Copyright © 2017 Jaison Bhatti. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface PhotoObject : NSObject
+
+- (instancetype) initWithName:(NSString *)name;
+@property (nonatomic, readonly) UIImage *image;
 
 @end

@@ -7,7 +7,25 @@
 //
 
 #import "PhotoManager.h"
+#import "Photo.h"
+
+@interface PhotoManager()
+@property 
+@end
 
 @implementation PhotoManager
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        Photo *basketballPlayers = [[Photo alloc] initWithName:@"Basketball"];
+        
+        Photo *computerNerds = [[Photo alloc] initWithName:@"Nerds"];
+        
+        _photos = @[basketballPlayers, computerNerds];
+    }
+    return self;
+}
 
 @end
