@@ -31,6 +31,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
 }
@@ -42,9 +47,7 @@
 
 
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    
-}
+
 
 
 @end

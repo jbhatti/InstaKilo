@@ -10,7 +10,7 @@
 #import "Photo.h"
 
 @interface PhotoManager()
-@property 
+@property (nonatomic, readonly) NSArray <Photo *>* photos;
 @end
 
 @implementation PhotoManager
@@ -26,6 +26,22 @@
         _photos = @[basketballPlayers, computerNerds];
     }
     return self;
+}
+
+- (NSInteger)numberOfSections {
+    return self.photos.count;
+}
+
+- (NSInteger) numberOfItemsInSection:(NSInteger)section {
+    return self.photos[section].photoObjects.count;
+}
+
+- (PhotoObject *)photoObjectAtIndexPath:(NSIndexPath *)indexPath {
+    return self.photos[indexPath.section].photoObjects[indexPath.item];
+}
+
+- (Photo *)photoAtIndexPath:(NSIndexPath *)indexPath {
+    return self.photos[indexPath.section];
 }
 
 @end

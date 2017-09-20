@@ -8,10 +8,16 @@
 
 @import UIKit;
 @class Photo;
+@class PhotoObject;
 
 @interface PhotoManager : NSObject
 
-@property (nonatomic, readonly) NSArray <Photo *>* photos;
+- (NSInteger)numberOfSections;
+- (NSInteger)numberOfItemsInSection:(NSInteger)section;
+- (PhotoObject *)photoObjectAtIndexPath:(NSIndexPath *)indexPath;
+- (Photo *)photoAtIndexPath:(NSIndexPath *)indexPath;
+
+
 
 
 @end
