@@ -31,7 +31,7 @@
 
 - (void) handleLayout {
     UICollectionViewFlowLayout * layout= (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
-    CGFloat halfWidth = self.view.frame.size.width/2;
+    CGFloat halfWidth = self.collectionView.frame.size.width/2;
     layout.itemSize = CGSizeMake(halfWidth, halfWidth);
 
 }

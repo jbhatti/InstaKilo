@@ -25,30 +25,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DuB-Nm-2pW">
-                                    <size key="itemSize" width="182" height="179"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="DuB-Nm-2pW">
+                                    <size key="itemSize" width="176" height="179"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="4Ld-zv-fxR" customClass="PhotoCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="50" width="182" height="179"/>
+                                        <rect key="frame" x="0.0" y="50" width="176" height="179"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="182" height="179"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="179"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZFH-DE-vml">
-                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="179"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="179"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="ZFH-DE-vml" secondAttribute="trailing" id="3EF-1P-ERN"/>
-                                            <constraint firstItem="ZFH-DE-vml" firstAttribute="leading" secondItem="4Ld-zv-fxR" secondAttribute="leading" id="4U4-o7-jni"/>
-                                            <constraint firstItem="ZFH-DE-vml" firstAttribute="top" secondItem="4Ld-zv-fxR" secondAttribute="top" id="o62-qh-41f"/>
-                                            <constraint firstAttribute="bottom" secondItem="ZFH-DE-vml" secondAttribute="bottom" id="vy1-jx-Ft1"/>
+                                            <constraint firstItem="ZFH-DE-vml" firstAttribute="top" secondItem="4Ld-zv-fxR" secondAttribute="top" id="JDK-lU-2Nd"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZFH-DE-vml" secondAttribute="bottom" id="VAt-0o-iYl"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZFH-DE-vml" secondAttribute="trailing" id="hcT-hQ-31l"/>
+                                            <constraint firstItem="ZFH-DE-vml" firstAttribute="leading" secondItem="4Ld-zv-fxR" secondAttribute="leading" id="sld-KY-jMv"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="ZFH-DE-vml" id="ZkR-hQ-fF7"/>
